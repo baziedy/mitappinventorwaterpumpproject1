@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Watering</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="card">
+
+            <div class="logo">
+                🌱
+            </div>
+
+            <h1>Smart Watering</h1>
+
+            <p class="subtitle">
+                Connect your smart watering system
+            </p>
+
+            <div class="input-group">
+                <label for="localId">Local ID</label>
+
+                <input
+                    id="localId"
+                    type="text"
+                    placeholder="ESP32 IP address"
+                    autocomplete="off"
+                >
+            </div>
+
+            <div class="input-group">
+                <label for="apiId">API ID</label>
+
+                <input
+                    id="apiId"
+                    type="text"
+                    placeholder="API URL"
+                    autocomplete="off"
+                >
+            </div>
+
+            <button id="connectButton">
+                Connect
+            </button>
+
+            <div id="status" class="status">
+                Not connected
+            </div>
+
+            <div class="connections">
+
+                <div class="connection">
+                    <span class="dot" id="localDot"></span>
+                    <span>ESP32 Local</span>
+                </div>
+
+                <div class="connection">
+                    <span class="dot" id="apiDot"></span>
+                    <span>AI API</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
